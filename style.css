@@ -315,7 +315,7 @@ body{
 }
 
 .skills .content .col-right .bar .jquery:before{
-  width: 80%;
+  width: 40%;
   background: #30dd6d;
 }
 
