@@ -2132,6 +2132,13 @@ header .logo a {
 	background: #FF0077;
 }
 
+.menu-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
 
 /** 
  * ===================================================================
