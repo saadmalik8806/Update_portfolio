@@ -617,7 +617,7 @@ input[type="button"] {
 	line-height: 5.4rem;
 	padding: 0 3rem;
 	margin: 0 .3rem 1.2rem 0;
-	background: #d8d8d8;
+	background: #000;
 	color: #313131;
 	text-decoration: none;
 	cursor: pointer;
@@ -641,7 +641,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-	background: #bebebe;
+	/* background: #bebebe; */
 	color: #000000;
 	outline: 0;
 }
@@ -1183,7 +1183,7 @@ header .logo a {
 	top: 100%;
 	left: 0;
 }
-
+  
 /* dropdown nav */
 .main-navigation {
 	background: #000000;
@@ -2132,13 +2132,6 @@ header .logo a {
 	background: #FF0077;
 }
 
-.menu-toggle {
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-}
 
 /** 
  * ===================================================================
