@@ -127,23 +127,23 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
- var toggleButton = $('.menu-toggle'),
-    nav = $('.main-navigation');
-
-// toggle button
-toggleButton.on('click', function(e) {
-  e.preventDefault();
-  toggleButton.toggleClass('is-clicked');
-  nav.slideToggle();
-});
-
-// nav items
-nav.find('li a').on("click", function() {
-  // update the toggle button 		
-  toggleButton.toggleClass('is-clicked'); 
-  // fade out the navigation panel
-  nav.fadeOut();   		
-});
+   $(document).ready(function() {
+	 var toggleButton = $('.menu-toggle'),
+		 nav = $('.main-navigation');
+ 
+	 // Toggle menu on click
+	 toggleButton.on('click', function(e) {
+	   e.preventDefault();
+	   toggleButton.toggleClass('is-clicked');
+	   nav.slideToggle();
+	 });
+ 
+	 // Hide menu on nav item click
+	 nav.find('li a').on("click", function() {
+	   toggleButton.removeClass('is-clicked');
+	   nav.fadeOut();
+	 });
+   }); 
 
    /*---------------------------------------------------- */
   	/* Highlight the current section in the navigation bar
